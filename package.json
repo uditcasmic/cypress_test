@@ -1,0 +1,22 @@
+{
+  "name": "cypress-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node scripts/cypress-cli.js run",
+    "cypress:open": "node scripts/cypress-cli.js open",
+    "cypress:run": "node scripts/cypress-cli.js run",
+    "cypress:run:chrome": "node scripts/cypress-cli.js run --browser chrome",
+    "cypress:run:report": "node scripts/cypress-cli.js run",
+    "cypress:verify": "node scripts/cypress-cli.js verify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "cypress": "^15.12.0",
+    "mochawesome": "^7.1.4"
+  }
+}
