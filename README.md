@@ -84,6 +84,18 @@ Run tests and generate report:
 npm run cypress:run:report
 ```
 
+Run tests with Cypress Cloud recording:
+
+```bash
+npm run cypress:run:record
+```
+
+Run tests in parallel with Cypress Cloud:
+
+```bash
+npm run cypress:run:parallel
+```
+
 ## Reporting
 
 Mochawesome reports are generated inside:
@@ -111,6 +123,28 @@ Current key settings:
 - `specPattern`: `e2e/**/*.cy.{js,jsx,ts,tsx}`
 - `reporter`: `mochawesome`
 - screenshots, videos, and downloads configured
+
+## Parallel Execution
+
+Parallel execution is configured using Cypress Cloud and GitHub Actions.
+
+Workflow file:
+
+```text
+.github/workflows/cypress-parallel.yml
+```
+
+What is included:
+
+- parallel CI execution across 2 containers
+- Cypress recording support
+- Chrome browser execution in CI
+
+To use parallel runs, add this GitHub repository secret:
+
+- `CYPRESS_RECORD_KEY`
+
+Without `CYPRESS_RECORD_KEY`, normal local Cypress runs still work, but GitHub parallel recording will not.
 
 ## Page Object Model
 
