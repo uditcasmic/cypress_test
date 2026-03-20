@@ -9,6 +9,8 @@
     "cypress:run": "node scripts/cypress-cli.js run",
     "cypress:run:chrome": "node scripts/cypress-cli.js run --browser chrome",
     "cypress:run:report": "node scripts/cypress-cli.js run",
+    "cypress:run:record": "node scripts/cypress-cli.js run --record",
+    "cypress:run:parallel": "node scripts/cypress-cli.js run --record --parallel",
     "cypress:verify": "node scripts/cypress-cli.js verify"
   },
   "keywords": [],
